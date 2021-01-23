@@ -32,7 +32,7 @@ Setup the `workspaces` in the `package.json` and tell Lerna to use `yarn` as the
 
 `yarn add --dev -W @babel/cli @babel/core @babel/preset-react @babel/preset-env babel-core@7.0.0-bridge.0 babel-loader babel-plugin-styled-components webpack`
 
-## TODO: Rollup & Babel setup
+## TODO: Rollup
 `yarn add --dev -W rollup @rollup/plugin-babel @babel/preset-typescript @babel/core @rollup/plugin-node-resolve rollup-plugin-peer-deps-external`
 
 ## Storybook setup
@@ -40,3 +40,45 @@ Setup the `workspaces` in the `package.json` and tell Lerna to use `yarn` as the
 
 ## Reactjs
 `yarn add --dev -W react react-dom styled-components`
+
+
+## TODO: Rollup
+`yarn add --dev -W rollup @rollup/plugin-babel @babel/preset-typescript @babel/core @rollup/plugin-node-resolve rollup-plugin-peer-deps-external`
+
+```js
+import resolve from '@rollup/plugin-node-resolve';
+import babel from '@rollup/plugin-babel'
+import pkg from './package.json';
+import path from 'path'
+
+import analyze from 'rollup-plugin-analyzer'
+
+import external from 'rollup-plugin-peer-deps-external'
+
+const extensions = ['.ts', '.tsx']
+const PACKAGE_ROOT =  './packages/**/*/index.js'
+
+const wd = path.resolve(__dirname, 'packages/button/src/index.js' )
+console.log('wd: ', wd);
+
+export default {
+    input: wd, //'./src/index.ts',
+    plugins: [
+        external(),
+        // Allows node_modules resolution
+        resolve({ extensions }),
+
+        // Compile TypeScript/JavaScript files
+        babel({ extensions, include: ['src/**/*'], babelHelpers: 'bundled' }),
+        analyze({ limit: 0 }),
+    ],
+
+    output: [
+        // Only exporting es modules
+        {
+            file: pkg.module,
+            format: 'es',
+        },
+    ],
+}
+```

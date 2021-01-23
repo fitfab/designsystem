@@ -10,8 +10,6 @@
     "@babel/preset-env": "^7.12.11",
     "@babel/preset-react": "^7.12.10",
     "@babel/preset-typescript": "^7.12.7",
-    "@rollup/plugin-babel": "^5.2.2",
-    "@rollup/plugin-node-resolve": "^11.1.0",
     "@storybook/addon-actions": "^6.1.14",
     "@storybook/addon-docs": "^6.1.15",
     "@storybook/addon-essentials": "^6.1.14",
@@ -24,9 +22,6 @@
     "lerna": "^3.22.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "rollup": "^2.36.2",
-    "rollup-plugin-analyzer": "^4.0.0",
-    "rollup-plugin-peer-deps-external": "^2.2.4",
     "styled-components": "^5.2.1",
     "webpack": "^5.16.0"
   },
