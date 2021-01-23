@@ -1,25 +1,27 @@
 import styled from 'styled-components';
 
 const InputView = styled.input`
-  background: ${p => p.primary? 'blue': 'gray'};
-  border: none;
+  border: 1px solid #ccc;
   border-radius: 4px;
-  color: #fff;
-  cursor: pointer;
+  color: #333;
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 100;
   line-height: ${p => p.size === 'large'? '36px': '28px'};
   padding: ${p => p.size === 'large'? '0 32px': '0 16px'};
 `;
 
-const Input = ({ primary, type, size, label, name, ...props }) => {
+const Label = styled.label`
+    display: inline-block;
+    margin: 0 16px 0 0;
+`
+
+const Input = ({ type, size, label, name, ...props }) => {
     
     return (
     <>
-        <label htmlFor={name}>{label.toUpperCase()}</label>
+        <Label htmlFor={name}>{label.toUpperCase()}</Label>
         <InputView 
             name={name}
-            primary={primary}
             size={size}
             type={type}
             {...props}
@@ -30,4 +32,4 @@ const Input = ({ primary, type, size, label, name, ...props }) => {
 }
 
 
-export default Button;
+export default Input;

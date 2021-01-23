@@ -3,7 +3,7 @@ import React from 'react';
 import Button from './index';
 
 export default {
-  title: 'Example/Button',
+  title: 'fitfab/Button',
   component: Button,
   argTypes: {
     backgroundColor: { control: 'color' },
