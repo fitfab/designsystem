@@ -1,5 +1,5 @@
 {
-  "name": "button",
+  "name": "@fitfab/button",
   "version": "1.0.0",
   "main": "lib/index.js",
   "module": "src/index.js",
@@ -9,8 +9,18 @@
     "styled-components": "latest"
   },
   "peerDependencies": {
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
-    "styled-components": "^5.0.0"
-  }
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
+    "styled-components": "^5.2.1"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
