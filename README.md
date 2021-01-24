@@ -1,6 +1,9 @@
-# Rollupjs, Typescript, react and styled-components library setup `monorepo`
+# Design System setup react and styled-components
+
+setting a multiple monorepo mechanism with lerna and yarn workspaces.
 
 ## Lerna setup
+
 `npx lerna init`
 
 This Command will generate a package.json and lerna.json file.
