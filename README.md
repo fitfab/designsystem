@@ -31,18 +31,24 @@ Setup the `workspaces` in the `package.json` and tell Lerna to use `yarn` as the
   "version": "independent"
 }
 ```
-## Babel setup 
+
+## Babel setup
 
 `yarn add --dev -W @babel/cli @babel/core @babel/preset-react @babel/preset-env babel-core@7.0.0-bridge.0 babel-loader babel-plugin-styled-components webpack`
 
 ## Storybook setup
+
 `yarn add --dev -W @storybook/react @storybook/addon-docs @storybook/preset-create-react-app`
 
 ## Reactjs
+
 `yarn add --dev -W react react-dom styled-components`
 
 
 ## TODO: Rollup
+
+Debating to todo this!
+
 `yarn add --dev -W rollup @rollup/plugin-babel @babel/preset-typescript @babel/core @rollup/plugin-node-resolve rollup-plugin-peer-deps-external`
 
 ```js
