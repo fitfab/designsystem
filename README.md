@@ -44,7 +44,11 @@ Setup the `workspaces` in the `package.json` and tell Lerna to use `yarn` as the
 
 `yarn add --dev -W react react-dom styled-components`
 
+## Jest setup
 
+`yarn add --dev -W jest babel-jest @babel/preset-env @babel/preset-react jest-styled-components`
+
+-----
 ## TODO: Rollup
 
 Debating to todo this!

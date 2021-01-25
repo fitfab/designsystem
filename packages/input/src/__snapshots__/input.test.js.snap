@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Render Correctly 1`] = `
+.c1 {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 100;
+  line-height: 36px;
+  padding: 0 32px;
+}
+
+.c0 {
+  display: inline-block;
+  margin: 0 16px 0 0;
+}
+
+<div>
+  <label
+    class="c0"
+    for="userName"
+  >
+    USER NAME:
+  </label>
+  <input
+    class="c1"
+    name="userName"
+  />
+</div>
+`;

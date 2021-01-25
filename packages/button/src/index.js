@@ -1,7 +1,8 @@
+import React from 'react'
 import styled from 'styled-components';
 
 const ButtonView = styled.button`
-  background: ${p => p.primary? 'blue': 'gray'};
+  background: ${p => p.primary? 'blue': p.theme.color};
   border: none;
   border-radius: 4px;
   color: #fff;
@@ -13,7 +14,6 @@ const ButtonView = styled.button`
 `;
 
 const Button = ({ primary, backgroundColor, size, label, ...props }) => {
-    console.log(primary, size, label);
     return (
         <ButtonView 
             primary={primary}

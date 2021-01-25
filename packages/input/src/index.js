@@ -1,3 +1,4 @@
+import React from 'react'
 import styled from 'styled-components';
 
 const InputView = styled.input`
@@ -15,8 +16,7 @@ const Label = styled.label`
     margin: 0 16px 0 0;
 `
 
-const Input = ({ type, size, label, name, ...props }) => {
-    
+const Input = ({ type, size, label, name, theme, ...props }) => {
     return (
     <>
         <Label htmlFor={name}>{label.toUpperCase()}</Label>
