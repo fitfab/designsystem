@@ -1,3 +1,8 @@
+/**
+ * Babel reference:
+ * https://babel.dev/docs/en/config-files#monorepos
+ * 
+ */
 
 module.exports = {
   presets: ["@babel/env", "@babel/preset-typescript", "@babel/react"],

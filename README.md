@@ -92,3 +92,13 @@ export default {
     ],
 }
 ```
+
+## References:
+
+main: https://leerob.io/blog/monorepo-lerna-yarn-workspaces
+
+https://github.com/stereobooster/typescript-monorepo
+
+https://aaronosteraas.com/typescript-monorepo/
+
+https://github.com/NiGhTTraX/ts-monorepo
